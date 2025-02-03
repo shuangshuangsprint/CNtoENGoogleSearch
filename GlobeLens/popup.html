@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>知行译界</title>
+  <!-- 引入 Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* 全局 box-sizing */
+    * {
+      box-sizing: border-box;
+    }
+    /* 页面整体背景渐变，居中显示 */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #74ABE2, #5563DE);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    /* 容器卡片 */
+    .container {
+      background: #ffffff;
+      width: 350px;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    /* 标题 */
+    h1 {
+      margin: 0 0 20px;
+      font-size: 28px;
+      color: #333;
+      font-weight: 600;
+    }
+    /* 文本输入框 */
+    textarea {
+      width: 100%;
+      height: 100px;
+      border: 2px solid #ddd;
+      border-radius: 15px;
+      padding: 15px;
+      font-size: 16px;
+      resize: none;
+      transition: border-color 0.3s ease;
+      outline: none;
+    }
+    textarea:focus {
+      border-color: #5563DE;
+    }
+    /* 语言选择下拉框 */
+    select {
+      width: 100%;
+      padding: 10px;
+      margin: 20px 0;
+      border: 2px solid #ddd;
+      border-radius: 15px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+      outline: none;
+    }
+    select:focus {
+      border-color: #5563DE;
+    }
+    /* 按钮 */
+    button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 15px;
+      background: #5563DE;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #3f4cb8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>知行译界</h1>
+    <textarea id="inputText" placeholder="好好学习"></textarea>
+    <select id="languageSelect">
+      <option value="en">英语</option>
+      <option value="ja">日语</option>
+      <option value="ko">韩语</option>
+    </select>
+    <button id="translateSearch">翻译并搜索</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
